@@ -1,0 +1,5 @@
+.content-area {
+  flex: 1;
+  padding: 16px;
+  transition: margin-left 0.3s;
+}
