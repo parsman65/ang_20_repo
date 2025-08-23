@@ -1,7 +1,7 @@
-<aside class="sidebar" [class.open]="isOpen">
+<div class="sidebar" [ngClass]="{'closed': !isOpen}">
   <ul>
-    <li><a routerLink="/dashboard">Dashboard</a></li>
-    <li><a routerLink="/users">Users</a></li>
-    <li><a routerLink="/courses">Courses</a></li>
+    <li style="cursor: pointer"><a routerLink="/home" routerLinkActive="active">خانه</a></li>
+    <li style="cursor: pointer"><a routerLink="/courses-list">دوره ها</a></li>
+    <li style="cursor: pointer"><a routerLink="/profile">پروفایل</a></li>
   </ul>
-</aside>
+</div>

@@ -1,0 +1,60 @@
+
+/* کل Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  direction: rtl;
+}
+
+/* Header */
+.layout > app-header {
+  flex: 0 0 auto; /* ارتفاع ثابت */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+/* Body (Sidebar + Main Content) */
+.layout-body {
+  flex: 1 1 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.layout-body app-sidebar {
+  flex: 0 0 250px; /* عرض ثابت */
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+/* وقتی سایدبار بسته است */
+.layout-body app-sidebar.closed {
+  flex: 0 0 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Main Content */
+.layout-content {
+  flex: 1 1 auto;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ecf0f1;
+}
+
+/* Scrollbar زیبا */
+.layout-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.layout-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
