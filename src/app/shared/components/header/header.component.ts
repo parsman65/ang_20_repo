@@ -3,14 +3,9 @@ import {Component, EventEmitter, Output} from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  standalone: true
+  standalone: true,
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
-  @Output() toggleSidebar = new EventEmitter<void>();
-
-  onHamburgerClick() {
-    this.toggleSidebar.emit();
-  }
 
 }
