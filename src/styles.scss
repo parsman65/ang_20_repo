@@ -18,12 +18,14 @@ body {
 /* هدر ثابت */
 .header {
   position: fixed;
+  font-size: 20px;
+  font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
   height: 80px;
   background: #fff;
-  color: white;
+  color: #444;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +46,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav-list {
+  list-style: none;       /* حذف بولت */
+  margin: 0;
+  padding: 0;
+  display: flex;          /* آیتم‌ها افقی کنار هم */
+  gap: 30px;              /* فاصله بین آیتم‌ها */
+}
+
+.nav-list li a {
+  text-decoration: none;  /* حذف underline */
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #1976d2; /* رنگ در hover */
 }
 
 /* ======================

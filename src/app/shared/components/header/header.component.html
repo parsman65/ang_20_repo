@@ -1,13 +1,45 @@
-<div style="display: flex">
+<div style="max-width: 1200px; width: 100%; display: flex; align-items: center; justify-content: space-between">
 
-  <div style="display: flex">
-    <div>
+  <div style="display:flex;">
+
+    <div style="margin-left: 40px">
       <img width="50px" src="assets/images/logo.jpeg">
-      test
-      <span>testtt</span>
+    </div>
+
+    <div style="display:flex; align-items: center">
+      <ul class="nav-list">
+        <li><a href="#">{{'home' | translate}}</a></li>
+        <li><a href="#">{{'courses' | translate}}</a></li>
+        <li><a href="#">{{'contact_us' | translate}}</a></li>
+      </ul>
     </div>
 
   </div>
-  <div></div>
+
+  <div style="display: flex; column-gap: 15px">
+    <!-- کادر جستجو -->
+    <div class="search-box">
+      <input type="text" placeholder="جستجو عنوان دوره..."/>
+      <button><span>🔍</span></button>
+    </div>
+
+    <!-- آیکن سبد خرید -->
+    <div class="cart-icon" style="display:flex; align-items: center">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">3</span>
+    </div>
+
+    <!-- آیکن کاربر (ورود/ثبت‌ نام) -->
+    <div>
+      <a style="border: 1px solid #1976d2; border-radius: 5px; padding: 10px; cursor: pointer">
+          {{'register_login' | translate}}
+      </a>
+    </div>
+
+  </div>
 
 </div>
+
+
+
+
