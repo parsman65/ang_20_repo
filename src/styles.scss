@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: 'iransans'; /* نامی که در CSS استفاده می‌کنید */
+  src: url('assets/fonts/IRANSans/IRANSansWeb_Light.woff') format('woff');
+}
 
 body {
   margin: 0;
   background: #f5f5f5;
+  font-family: 'iransans';
+
 }
 
 /* کانتینر کلی سایت */
