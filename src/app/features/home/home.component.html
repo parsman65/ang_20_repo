@@ -46,7 +46,8 @@
       {{ 'latest_courses' | translate }}
     </span>
     <div>
-      <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+      <p-carousel [value]="courses" dir="ltr"
+                  [numVisible]="4" [numScroll]="1" [circular]="false">
         <ng-template let-course #item>
           <div class="courses-container">
             <app-course-card
@@ -73,7 +74,7 @@
         {{ 'popular_coursers' | translate }}
       </span>
       <div>
-        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+        <p-carousel [value]="courses" dir="ltr" [numVisible]="4" [numScroll]="1" [circular]="false">
           <ng-template let-course #item>
             <div class="courses-container">
               <app-course-card
@@ -101,7 +102,7 @@
         {{ 'free_courses' | translate }}
       </span>
       <div>
-        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+        <p-carousel [value]="courses" dir="ltr" [numVisible]="4" [numScroll]="1" [circular]="false">
           <ng-template let-course #item>
             <div class="courses-container">
               <app-course-card
@@ -129,7 +130,7 @@
         {{ 'ended_courses' | translate }}
       </span>
       <div>
-        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+        <p-carousel [value]="courses" dir="ltr" [numVisible]="4" [numScroll]="1" [circular]="false">
           <ng-template let-course #item>
             <div class="courses-container">
               <app-course-card
