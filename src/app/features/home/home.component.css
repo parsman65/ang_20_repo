@@ -1,0 +1,9 @@
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250PX);
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;  /* محدود به 1200px */
+  margin: 0 auto;     /* وسط چین کردن */
+  padding: 20px;
+}

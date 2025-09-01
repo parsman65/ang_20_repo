@@ -5,20 +5,32 @@
     <div>
       <div style="text-align: justify-all; font-size: 42px; font-weight: normal;
       text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
-        {{'Learning_Programming_Made_Simple_and_Fun' | translate}}
+        {{ 'Learning_Programming_Made_Simple_and_Fun' | translate }}
       </div>
       <div style="font-size: 20px; line-height: 50px">
         <i class="pi pi-check-circle" style="color: #1976d2; font-size: 20px"></i>
-        {{'zero_to_100' | translate}}
+        {{ 'zero_to_100' | translate }}
       </div>
       <div style="font-size: 20px; line-height: 50px">
         <i class="pi pi-check-circle" style="color: #1976d2; font-size: 20px"></i>
-        {{'future_skills_here' | translate}}
+        {{ 'future_skills_here' | translate }}
       </div>
       <div style="font-size: 20px; line-height: 50px">
         <i class="pi pi-check-circle" style="color: #1976d2; font-size: 20px"></i>
-        {{'unlimited_access_to_videos' | translate}}
+        {{ 'unlimited_access_to_videos' | translate }}
       </div>
+
+      <!--      <div style="line-height: 100px; text-align: justify-all; font-size: 30px; font-weight: normal;-->
+      <!--      text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">-->
+      <!--        {{'need_Guidance' | translate}}-->
+      <!--      </div>-->
+      <!--      <div>-->
+      <!--        <button pButton-->
+      <!--                type="button"-->
+      <!--                label="ثبت نام"-->
+      <!--                class="p-button-primary">-->
+      <!--        </button>-->
+      <!--      </div>-->
     </div>
 
     <div>
@@ -26,4 +38,104 @@
     </div>
 
   </div>
+
+  <!--  جدیدترین دوره ها -->
+  <div>
+    <span style="font-weight: normal; font-size: 20px; color: #444444;
+      text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
+      {{ 'latest_courses' | translate }}
+    </span>
+    <div class="courses-container">
+      <app-course-card
+        *ngFor="let course of courses"
+        [image]="course.image"
+        [title]="course.title"
+        [instructor]="course.instructor"
+        [duration]="course.duration"
+        [students]="course.students"
+        [level]="course.level"
+        [price]="course.price"
+        [discountedPrice]="course.discountedPrice">
+
+      </app-course-card>
+    </div>
+  </div>
+
+  <!--  محبوبترین دوره ها -->
+  <div style="margin-top: 70px">
+    <div>
+      <span style="font-weight: normal; font-size: 20px; color: #444444;
+      text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
+        {{ 'popular_coursers' | translate }}
+      </span>
+      <div class="courses-container">
+        <app-course-card
+          *ngFor="let course of courses"
+          [image]="course.image"
+          [title]="course.title"
+          [instructor]="course.instructor"
+          [duration]="course.duration"
+          [students]="course.students"
+          [level]="course.level"
+          [price]="course.price"
+          [discountedPrice]="course.discountedPrice">
+
+        </app-course-card>
+      </div>
+    </div>
+  </div>
+
+  <!--  دوره های رایگان -->
+  <div style="margin-top: 70px">
+    <div>
+      <span style="font-weight: normal; font-size: 20px; color: #444444;
+      text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
+        {{ 'free_courses' | translate }}
+      </span>
+      <div class="courses-container">
+        <app-course-card
+          *ngFor="let course of courses"
+          [image]="course.image"
+          [title]="course.title"
+          [instructor]="course.instructor"
+          [duration]="course.duration"
+          [students]="course.students"
+          [level]="course.level"
+          [price]="course.price"
+          [discountedPrice]="course.discountedPrice">
+
+        </app-course-card>
+      </div>
+    </div>
+  </div>
+
+  <!--  دوره های به اتمام رسیده -->
+  <div style="margin-top: 70px">
+    <div>
+      <span style="font-weight: normal; font-size: 20px; color: #444444;
+      text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
+        {{ 'ended_courses' | translate }}
+      </span>
+      <div class="courses-container">
+        <app-course-card
+          *ngFor="let course of courses"
+          [image]="course.image"
+          [title]="course.title"
+          [instructor]="course.instructor"
+          [duration]="course.duration"
+          [students]="course.students"
+          [level]="course.level"
+          [price]="course.price"
+          [discountedPrice]="course.discountedPrice">
+
+        </app-course-card>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 </div>
