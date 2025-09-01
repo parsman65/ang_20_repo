@@ -2,7 +2,9 @@ import {Component} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {ButtonModule} from 'primeng/button';
 import {CourseCardComponent} from '../courses/course-card/course-card.component';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgStyle} from '@angular/common';
+import {Carousel} from 'primeng/carousel';
+import {Tag} from 'primeng/tag';
 
 
 @Component({
@@ -10,7 +12,7 @@ import {NgForOf} from '@angular/common';
   standalone: true,
   templateUrl: './home.component.html',
   imports: [
-    TranslatePipe, ButtonModule, CourseCardComponent, NgForOf
+    TranslatePipe, ButtonModule, CourseCardComponent, NgForOf, Carousel, Tag, NgStyle
   ],
   styleUrl: './home.component.css'
 })
@@ -21,31 +23,38 @@ export class HomeComponent {
     this.courses = [
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       },
       {
         image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000
+        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        tag: "test"
       }
     ]
   }

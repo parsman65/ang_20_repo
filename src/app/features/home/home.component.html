@@ -45,19 +45,23 @@
       text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
       {{ 'latest_courses' | translate }}
     </span>
-    <div class="courses-container">
-      <app-course-card
-        *ngFor="let course of courses"
-        [image]="course.image"
-        [title]="course.title"
-        [instructor]="course.instructor"
-        [duration]="course.duration"
-        [students]="course.students"
-        [level]="course.level"
-        [price]="course.price"
-        [discountedPrice]="course.discountedPrice">
-
-      </app-course-card>
+    <div>
+      <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+        <ng-template let-course #item>
+          <div class="courses-container">
+            <app-course-card
+              [image]="course.image"
+              [title]="course.title"
+              [instructor]="course.instructor"
+              [duration]="course.duration"
+              [students]="course.students"
+              [level]="course.level"
+              [price]="course.price"
+              [discountedPrice]="course.discountedPrice">
+            </app-course-card>
+          </div>
+        </ng-template>
+      </p-carousel>
     </div>
   </div>
 
@@ -68,19 +72,23 @@
       text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
         {{ 'popular_coursers' | translate }}
       </span>
-      <div class="courses-container">
-        <app-course-card
-          *ngFor="let course of courses"
-          [image]="course.image"
-          [title]="course.title"
-          [instructor]="course.instructor"
-          [duration]="course.duration"
-          [students]="course.students"
-          [level]="course.level"
-          [price]="course.price"
-          [discountedPrice]="course.discountedPrice">
-
-        </app-course-card>
+      <div>
+        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+          <ng-template let-course #item>
+            <div class="courses-container">
+              <app-course-card
+                [image]="course.image"
+                [title]="course.title"
+                [instructor]="course.instructor"
+                [duration]="course.duration"
+                [students]="course.students"
+                [level]="course.level"
+                [price]="course.price"
+                [discountedPrice]="course.discountedPrice">
+              </app-course-card>
+            </div>
+          </ng-template>
+        </p-carousel>
       </div>
     </div>
   </div>
@@ -92,19 +100,23 @@
       text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
         {{ 'free_courses' | translate }}
       </span>
-      <div class="courses-container">
-        <app-course-card
-          *ngFor="let course of courses"
-          [image]="course.image"
-          [title]="course.title"
-          [instructor]="course.instructor"
-          [duration]="course.duration"
-          [students]="course.students"
-          [level]="course.level"
-          [price]="course.price"
-          [discountedPrice]="course.discountedPrice">
-
-        </app-course-card>
+      <div>
+        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+          <ng-template let-course #item>
+            <div class="courses-container">
+              <app-course-card
+                [image]="course.image"
+                [title]="course.title"
+                [instructor]="course.instructor"
+                [duration]="course.duration"
+                [students]="course.students"
+                [level]="course.level"
+                [price]="course.price"
+                [discountedPrice]="course.discountedPrice">
+              </app-course-card>
+            </div>
+          </ng-template>
+        </p-carousel>
       </div>
     </div>
   </div>
@@ -116,22 +128,28 @@
       text-shadow: 1px 0 currentColor, -1px 0 currentColor, 0 1px currentColor, 0 -1px currentColor;">
         {{ 'ended_courses' | translate }}
       </span>
-      <div class="courses-container">
-        <app-course-card
-          *ngFor="let course of courses"
-          [image]="course.image"
-          [title]="course.title"
-          [instructor]="course.instructor"
-          [duration]="course.duration"
-          [students]="course.students"
-          [level]="course.level"
-          [price]="course.price"
-          [discountedPrice]="course.discountedPrice">
-
-        </app-course-card>
+      <div>
+        <p-carousel [value]="courses" [numVisible]="3" [numScroll]="3" [circular]="false">
+          <ng-template let-course #item>
+            <div class="courses-container">
+              <app-course-card
+                [image]="course.image"
+                [title]="course.title"
+                [instructor]="course.instructor"
+                [duration]="course.duration"
+                [students]="course.students"
+                [level]="course.level"
+                [price]="course.price"
+                [discountedPrice]="course.discountedPrice">
+              </app-course-card>
+            </div>
+          </ng-template>
+        </p-carousel>
       </div>
     </div>
   </div>
+
+
 
 
 
