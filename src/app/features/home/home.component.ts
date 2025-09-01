@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+import {ButtonModule} from 'primeng/button';
 
 
 @Component({
@@ -7,7 +8,7 @@ import {TranslatePipe, TranslateService} from '@ngx-translate/core';
   standalone: true,
   templateUrl: './home.component.html',
   imports: [
-    TranslatePipe
+    TranslatePipe, ButtonModule
   ],
   styleUrl: './home.component.css'
 })
