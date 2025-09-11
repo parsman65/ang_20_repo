@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Card} from 'primeng/card';
 import {CurrencyPipe, NgIf} from '@angular/common';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-course-card',
@@ -8,14 +9,16 @@ import {CurrencyPipe, NgIf} from '@angular/common';
   imports: [
     Card,
     CurrencyPipe,
-    NgIf
+    NgIf,
+    RouterLink
   ],
   templateUrl: './course-card.component.html',
   styleUrl: './course-card.component.scss'
 })
 export class CourseCardComponent {
   @Input() image!: string;
-  @Input() title!: string;
+  @Input() titleFa!: string;
+  @Input() titleEn!: string;
   @Input() instructor!: string;
   @Input() duration!: string;
   @Input() students!: number;

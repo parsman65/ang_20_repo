@@ -1,21 +1,26 @@
 
-<p-card [style]="{'width': '300px'}" [header]="title">
-  <img [src]="image" alt="{{title}}" class="course-image">
-  <div>
-    <p>{{instructor}}</p>
-    <p>{{duration}}</p>
-    <p>{{students}}</p>
-    <p>{{level}}</p>
-    <p>
+<p-card [style]="{'width': '300px'}">
+  <a routerLink="/course-detail">
+    <img [src]="image" alt="{{titleFa}}" class="course-image">
+    <div>
+      {{titleFa}}
+    </div>
+    <div>
+      <p>{{instructor}}</p>
+      <p>{{duration}}</p>
+      <p>{{students}}</p>
+      <p>{{level}}</p>
+      <p>
       <span *ngIf="discountedPrice != null" style="text-decoration:line-through; color:#888;">
         {{price | currency:'USD'}}
       </span>
 
-      <span class="p-ml-1" style="color: #1976d2; font-weight:bold;">
+        <span class="p-ml-1" style="color: #1976d2; font-weight:bold;">
         {{ discountedPrice ? discountedPrice : price | currency:'USD'}}
       </span>
-    </p>
-  </div>
+      </p>
+    </div>
+  </a>
 </p-card>
 
 

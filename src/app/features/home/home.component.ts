@@ -23,40 +23,70 @@ export class HomeComponent {
   constructor(private translate: TranslateService) {
     this.courses = [
       {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        id: 1,
+        slug: "javascript-0-to-100",
+        image: "assets/images/course-titles/javascript.png",
+        titleFa: "دوره آموزشی جامع جاوااسکریپت صفر تا صد",
+        titleEn: "JavaScript 0 to 100",
+        instructor: "علی اسلامی",
+        duration: "20 ساعت",
+        students: 1201,
+        levelEn: "beginner to advanced",
+        levelFa: "مقدماتی تا پیشرفته",
+        price: 870000,
+        discountedPrice: 450000,
         tag: "test"
       },
+
       {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        id: 2,
+        slug: "java-beginner",
+        image: "assets/images/course-titles/java-beginner.png",
+        titleFa: "دوره آموزشی جامع جاوا مقدماتی",
+        titleEn: "JavaScript 0 to 100",
+        instructor: "علی اسلامی",
+        duration: "20 ساعت",
+        students: 1201,
+        levelEn: "beginner",
+        levelFa: "مقدماتی",
+        price: 870000,
+        discountedPrice: 450000,
         tag: "test"
       },
+
       {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        id: 3,
+        slug: "java-intermediate",
+        image: "assets/images/course-titles/java-intermediate.png",
+        titleFa: "دوره آموزش جاوا متوسط",
+        titleEn: "java intermediate",
+        instructor: "علی اسلامی",
+        duration: "20 ساعت",
+        students: 1201,
+        levelEn: "intermediate",
+        levelFa: "متوسط",
+        price: 870000,
+        discountedPrice: 450000,
         tag: "test"
       },
+
       {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
+        id: 4,
+        slug: "java-advanced",
+        image: "assets/images/course-titles/java-advance.png",
+        titleFa: "دوره آموزشی جاوا پیشرفته",
+        titleEn: "java advanced",
+        instructor: "علی اسلامی",
+        duration: "20 ساعت",
+        students: 1201,
+        levelEn: "advanced",
+        levelFa: "پیشرفته",
+        price: 870000,
+        discountedPrice: 450000,
         tag: "test"
       },
-      {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
-        tag: "test"
-      },
-      {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
-        tag: "test"
-      },
-      {
-        image: "assets/images/course-titles/course-javascript.png", title: "Javascript", instructor: "علی اسلامی",
-        duration: "20 ساعت", students: 1201, level: "مقدماتی تا پیشرفته", price: 870000, discountedPrice: 450000,
-        tag: "test"
-      }
+
+
     ]
   }
 
