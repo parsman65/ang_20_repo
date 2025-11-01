@@ -11,13 +11,13 @@ import {FooterComponent} from "../../shared/components/footer/footer.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  templateUrl: './home.component.html',
+  templateUrl: './home.html',
     imports: [
         TranslatePipe, ButtonModule, CourseCardComponent, NgForOf, Carousel, Tag, NgStyle, FooterComponent
     ],
-  styleUrl: './home.component.css'
+  styleUrl: './home.scss'
 })
-export class HomeComponent {
+export class Home {
   courses: any[] = [];
 
   constructor(private translate: TranslateService) {
