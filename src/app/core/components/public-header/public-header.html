@@ -1,0 +1,40 @@
+<header class="public-header">
+  <div style="display:flex;">
+    <div class="logo" style="margin-left: 40px">
+      <img width="50px" src="assets/images/logo.jpeg">
+    </div>
+
+    <div style="display:flex; align-items: center">
+      <nav class="nav-list">
+        <a routerLink="/">{{'home' | translate}}</a>
+        <a routerLink="/courses">{{'courses' | translate}}</a>
+        <a routerLink="/contact_us">{{'contact_us' | translate}}</a>
+      </nav>
+    </div>
+  </div>
+
+  <div>
+    <!-- کادر جستجو -->
+    <p-iconfield>
+      <p-inputicon class="pi pi-search" />
+      <input type="text" pInputText placeholder="جستجوی عنوان دوره ..." pSize="small" style="width: 500px" />
+    </p-iconfield>
+  </div>
+
+  <div style="display: flex; column-gap: 15px">
+
+    <!-- آیکن سبد خرید -->
+    <div class="cart-icon" style="display:flex; align-items: center">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">3</span>
+    </div>
+
+    <!-- آیکن کاربر (ورود/ثبت‌ نام) -->
+    <div>
+      <a style="border: 2px solid #1976d2; border-radius: 5px; padding: 5px; cursor: pointer; font-size: 15px">
+        {{'register_login' | translate}}
+      </a>
+    </div>
+
+  </div>
+</header>

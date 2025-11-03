@@ -3,6 +3,7 @@ import {CourseDetailsComponent} from './features/courses/course-details/course-d
 import {PublicLayout} from './core/layouts/public-layout/public-layout';
 import {UserLayout} from './core/layouts/user-layout/user-layout';
 import {AdminLayout} from './core/layouts/admin-layout/admin-layout';
+import {InstructorLayout} from './core/layouts/instructor-layout/instructor-layout';
 
 export const routes: Routes = [
   {
@@ -27,6 +28,13 @@ export const routes: Routes = [
     component: AdminLayout,
     children: [
       { path: 'dashboard', loadComponent: () => import('./features/dashboards/admin-dashboard/admin-dashboard').then(m => m.AdminDashboard) },
+    ]
+  },
+  {
+    path: 'instructor',
+    component: InstructorLayout,
+    children: [
+      { path: 'dashboard', loadComponent: () => import('./features/dashboards/instructor-dashboard/instructor-dashboard').then(m => m.InstructorDashboard) },
     ]
   },
   {
