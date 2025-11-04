@@ -7,100 +7,17 @@
 
 body {
   margin: 0;
-  background: #fff;
+  background-color: #f3f4f6;
+  margin: 0;
   font-family: 'iransans';
-
 }
 
 /* کانتینر کلی سایت */
-.content {
-  max-width: 1200px;
-  margin: 80px auto 60px auto; /* فاصله از بالا و پایین */
-  padding: 20px;
+.app-container {
+  max-width: 1440px;
+  margin: 0 auto; /* مرکزچین شدن */
   background: #fff;
-  min-height: calc(100vh - 140px); /* ارتفاع محتوا = کل صفحه منهای هدر و فوتر */
-}
-
-/* هدر ثابت */
-.header {
-  position: fixed;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: #fff;
-  color: #444;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-}
-
-/* فوتر ثابت */
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: #222;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-list {
-  list-style: none;       /* حذف بولت */
-  margin: 0;
-  padding: 0;
-  display: flex;          /* آیتم‌ها افقی کنار هم */
-  gap: 30px;              /* فاصله بین آیتم‌ها */
-}
-
-.nav-list li a {
-  text-decoration: none;  /* حذف underline */
-  color: #333;
-  font-weight: 500;
-  font-size: 15px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-list li a:hover {
-  color: #1976d2; /* رنگ در hover */
-}
-
-/* ======================
-   ریسپانسیو (Mobile / Tablet)
-   ====================== */
-
-/* تبلت و پایین‌تر */
-@media (max-width: 1200px) {
-  .content {
-    max-width: 100%;
-    margin: 70px 10px 50px 10px; /* فاصله کمتر و با padding کناری */
-  }
-}
-
-/* موبایل */
-@media (max-width: 768px) {
-  .header {
-    height: 60px;
-    font-size: 14px;
-  }
-
-  .footer {
-    height: 50px;
-    font-size: 13px;
-  }
-
-  .content {
-    margin: 60px 5px 50px 5px;
-    padding: 15px;
-  }
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
 

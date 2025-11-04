@@ -1,0 +1,78 @@
+.public-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer ;
+  align-items: center;
+}
+.logo img {
+  height: 70px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-list a.active, .nav-list a:hover {
+  color: #007ad9;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  justify-content: center;
+  flex: 1;
+}
+.search-box input {
+    width: 500px;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.4rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.cart-icon:hover {
+  color: #007ad9;
+}
+.cart-icon .badge {
+  position: absolute;
+  top: -6px;
+  left: -8px;
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+
+}

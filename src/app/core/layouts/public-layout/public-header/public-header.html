@@ -1,0 +1,45 @@
+
+<header class="public-header">
+
+  <div class="header-content">
+
+    <!---------------------------------------------------------- لوگو ------------------------------------------------->
+    <div class="logo">
+      <img width="50px" src="../../../../../assets/images/logo.jpeg" alt="codestan">
+      <div>{{'codestan' | translate}}</div>
+    </div>
+
+    <!---------------------------------------------------------- منو -------------------------------------------------->
+    <nav class="nav-list">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >{{'home' | translate}}</a>
+      <a routerLink="/courses" routerLinkActive="active">{{'courses' | translate}}</a>
+      <a routerLink="/about" routerLinkActive="active">{{'about_us' | translate}}</a>
+      <a routerLink="/contact" routerLinkActive="active">{{'contact_us' | translate}}</a>
+    </nav>
+
+    <!--------------------------------------------------------- جستجو ------------------------------------------------->
+    <div class="search-box">
+      <input type="text" placeholder="جستجو دوره ... " pInputText [(ngModel)]="searchCourse">
+      <button pButton icon="pi pi-search" (click)="onSearchCourse()"></button>
+    </div>
+
+    <div style="display: flex; align-items: center; column-gap: 25px">
+      <!----------------------------------------------------- سبد خرید -------------------------------------------------->
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span *ngIf="cartCount > 0" class="badge">{{cartCount}}</span>
+      </div>
+
+      <!-------------------------------------------------دکمه ورود / ثبت نام -------------------------------------------->
+      <div class="auth-button">
+        <button pButton label="{{'register_login' | translate}}" (click)="onAuthBtnClick()"></button>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</header>

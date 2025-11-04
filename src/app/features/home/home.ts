@@ -5,7 +5,6 @@ import {CourseCardComponent} from '../courses/course-card/course-card.component'
 import {NgForOf, NgStyle} from '@angular/common';
 import {Carousel} from 'primeng/carousel';
 import {Tag} from 'primeng/tag';
-import {FooterComponent} from "../../shared/components/footer/footer.component";
 
 
 @Component({
@@ -13,8 +12,7 @@ import {FooterComponent} from "../../shared/components/footer/footer.component";
   standalone: true,
   templateUrl: './home.html',
     imports: [
-        TranslatePipe, ButtonModule, CourseCardComponent, NgForOf, Carousel, Tag, NgStyle, FooterComponent
-    ],
+        TranslatePipe, ButtonModule, CourseCardComponent, Carousel ],
   styleUrl: './home.scss'
 })
 export class Home {
